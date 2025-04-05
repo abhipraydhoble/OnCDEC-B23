@@ -8,9 +8,6 @@
 - simply getting something done, step by step, to achieve a clear result.
 ## Project Phases
 
-![image](https://github.com/user-attachments/assets/05929b67-ee27-498c-9202-1782f9c2726f)
-
-
 
 ##  Software Development Life Cycle (SDLC)
 
