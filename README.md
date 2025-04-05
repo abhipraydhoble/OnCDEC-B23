@@ -1,5 +1,3 @@
-# Devops-Session
-
 
 # $$\color{orange} \textbf{Introduction To Devops}$$
 
