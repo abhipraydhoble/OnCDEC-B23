@@ -1,0 +1,35 @@
+Git: 
+- version control system 
+- code changes can be track 
+- source code management
+
+
+step1: git install
+- windows (git bash)
+- linux
+ # yum install git -y  (amazon linux)
+ # git --version
+
+ Step2: Github
+ - create new repository (git-day-one)
+ - click on code 
+ - copy https link
+
+Step3: login to ec2 instance
+- git clone https://github.com/abhipraydhoble/git-day-one.git
+- ls 
+- cd git-day-one
+
+Set Up Identity:
+# git config --global user.name "Abhi"
+# git config --global user.email "abhipraydh96@gmail.com"
+# git config --global --list
+
+# touch example.txt   (working dir)
+# git add example.txt  (staging area)
+# git status           (check files added in staging or not)
+# git commit -m "code is ready"  (local repo)
+# git logs  (commit history)
+# git push    (push file to  github)
+username: abhipraydhoble
+password: git-hub-token  (does not support password)
