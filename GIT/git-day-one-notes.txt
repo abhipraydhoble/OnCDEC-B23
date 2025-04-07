@@ -15,7 +15,8 @@ step1: git install
  - click on code 
  - copy https link
 
-Step3: login to ec2 instance
+Step3: Clone via https:
+- login to ec2 instance
 - git clone https://github.com/abhipraydhoble/git-day-one.git
 - ls 
 - cd git-day-one
@@ -33,3 +34,11 @@ Set Up Identity:
 # git push    (push file to  github)
 username: abhipraydhoble
 password: git-hub-token  (does not support password)
+
+Step4: Clone via ssh:
+# touch demo.txt   (working dir)
+# git add demo.txt  (staging area)
+# git status           (check files added in staging or not)
+# git commit -m "code is ready"  (local repo)
+# git logs  (commit history)
+# git push    (push file to  github)
