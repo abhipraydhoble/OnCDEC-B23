@@ -12,6 +12,17 @@ newgrp docker
 sudo chmod 777 /var/run/docker.sock
 ````
 
+## Docker Installation Steps on Ubuntu:
+
+````
+sudo apt install docker.io -y
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo usermod -aG docker ubuntu
+newgrp docker
+sudo chmod 777 /var/run/docker.sock
+````
+
 ## Docker Basic Commands:
 
 ### pull docker image from dockerhub
