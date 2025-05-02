@@ -123,7 +123,7 @@ kubectl get pods
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deploy-green
+  name: mydeployment
 
 spec:
  replicas: 4
@@ -137,8 +137,8 @@ spec:
     app: green
   spec:
    containers:
-    - name: green-container
-      image: abhipraydh96/green:latest
+    - name: mycont
+      image: nginx
       ports:
         - containerPort: 80
 ```
@@ -150,10 +150,24 @@ kubectl apply -f deploy.yaml
 ````
 ## to check deployment created or not
 ````
-kubectl get deploy
+kubectl get deploy -o wide
 ````
 ## to list pods
 ````
 kubectl get pods
 ````
 
+## rolling update
+````
+kubectl set image deployment/mydeployment  mycont=nginx:1.14.1 --record
+````
+
+## check history
+````
+kubectl rollout history deployment/mydeployment
+````
+## roll bacck
+
+````
+kubectl rollout undo deployment/mydeployment
+````
