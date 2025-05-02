@@ -112,12 +112,12 @@ kubectl get pods
 - allowing changes without downtime. 
 - It also supports rollback to previous stable versions in case of failure.
   
-**Rolling Updates:** Gradually replaces old Pods with new ones to ensure zero downtime.
-**Rollbacks:** Reverts to a previous version if the new deployment causes issues.
+- **Rolling Updates:** Gradually replaces old Pods with new ones to ensure zero downtime.
+- **Rollbacks:** Reverts to a previous version if the new deployment causes issues.
 
-**Version History:** Tracks changes across deployments for easy management.
+- **Version History:** Tracks changes across deployments for easy management.
 
-**Self-healing:** Replaces failed or terminated pods automatically.
+- **Self-healing:** Replaces failed or terminated pods automatically.
 
 ```yaml
 apiVersion: apps/v1
