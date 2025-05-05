@@ -74,3 +74,6 @@ spec:
           ports:
             - containerPort: 80
 ```
+
+
+![image](https://github.com/user-attachments/assets/66290cf2-4879-4de7-ab45-0668c60a0ab4)
