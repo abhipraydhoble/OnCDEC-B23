@@ -4,3 +4,11 @@
 ![image](https://github.com/user-attachments/assets/111480ae-f5ab-4333-ac92-32b8d12e80cd)
 ![image](https://github.com/user-attachments/assets/c54b8599-4dd1-40a1-aedc-c8573badd074)
 ![image](https://github.com/user-attachments/assets/6abde114-8431-4bc9-9b49-df58518c16b1)
+
+
+
+
+## terraform install link
+````
+https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+````
