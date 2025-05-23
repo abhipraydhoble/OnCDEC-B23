@@ -13,3 +13,7 @@ kubectl apply -f <file-name>
 ````
 kubectl get poods
 ````
+# killerkoda link
+````
+https://killercoda.com/kubernetes/scenario/playground
+````
