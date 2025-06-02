@@ -11,3 +11,20 @@ echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]" \
 sudo apt-get update
 sudo apt-get install jenkins -y
 ````
+
+
+# sample pipeline
+
+````
+pipeline {
+    agent any 
+
+    stages{
+        stage('code-pull'){
+            steps{
+                git branch: 'main', url: 'https://github.com/abhipraydhoble/OnCDEC-B23.git'
+            }
+        }
+    }
+}
+````
