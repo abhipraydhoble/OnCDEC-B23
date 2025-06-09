@@ -3,7 +3,7 @@
 ## Step 1: Install Java
 Run the following commands to install Java:
 ```bash
-sudo apt-get update && sudo apt-get install openjdk-11-jdk -y
+sudo apt-get update && sudo apt-get install openjdk-21-jdk -y
 ```
 
 ## Step 2: Install Unzip Utility
