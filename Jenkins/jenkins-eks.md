@@ -151,4 +151,41 @@ kubectl version --short --client
 	$ sudo vi .kube/config  <br/>
 
 4) check eks nodes <br/>
-	$ kubectl get nodes 
+	$ kubectl get nodes
+---
+check eks nodes
+```
+export KUBECONFIG=~/.kube/config
+kubectl config current-context
+kubectl get nodes
+```
+# check using jenkins pipeline 
+1.install plugins:- stage,aws credential
+
+2.create aws-cred in manage jenkins> credential
+
+3.create pipeline
+```
+pipeline {
+  agent any
+  environment {
+    KUBECONFIG = '/var/lib/jenkins/.kube/config'
+  }
+  stages {
+    stage('Use AWS Credentials') {
+      steps {
+          withCredentials([aws(accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'aws-cred', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY')]) {
+          sh "aws sts get-caller-identity"
+          sh "kubectl get nodes"
+            }
+      }
+    }
+}
+}
+```
+
+Note: We should be able to see EKS cluster nodes in jenkins console and jenkins server 
+# Delete eks cluster after use in eks-server
+```
+eksctl delete cluster --name my-ekscluster --region <your-region-name>
+```
