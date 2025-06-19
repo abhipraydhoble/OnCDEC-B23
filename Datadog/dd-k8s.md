@@ -10,6 +10,9 @@ kubectl create secret generic datadog-secret \
 ````
 Add the Datadog Helm repository
 ````
+sudo snap install helm --classic
+````
+````
 helm repo add datadog https://helm.datadoghq.com
 helm repo update
 
