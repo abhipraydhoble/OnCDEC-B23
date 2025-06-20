@@ -42,7 +42,7 @@ chmod +x send_metric.sh
 crontab -e
 ````
 ````
-*/5 * * * * /home/ec2-user/send_metric.sh
+*/5 * * * * /home/ubuntu/send_metric.sh
 ````
 
 ## Create a Custom Dashboard in Datadog
